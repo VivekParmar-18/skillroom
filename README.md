@@ -1,7 +1,5 @@
 <div align="center">
 
-<!-- BANNER: replace this line with a hero image at docs/banner.png (1280×640). See "Branding assets" below. -->
-
 # 🧠 Prompt Intelligence Engine
 
 ### Turn one-line prompts into expert-level prompts — automatically.
@@ -53,8 +51,6 @@ plaintext secrets, edge cases handled.
 
 ▸ Run this now? (yes / edit / show your work)
 ```
-
-> **Demo:** _add an animated `docs/demo.gif` here — see [Branding assets](#-branding-assets)._
 
 ---
 
@@ -157,7 +153,6 @@ No. The skill is plain instructions Claude reads locally — there's no server, 
 
 ## 🗺️ Roadmap
 
-- [ ] Animated demo GIF + hero banner
 - [ ] More domain playbooks (data science, mobile, game dev, legal)
 - [ ] Optional "ask me 1 question" mode for high-stakes prompts
 - [ ] Saved prompt templates / favorites
@@ -168,14 +163,6 @@ Have an idea? [Open an issue](https://github.com/VivekParmar-18/skillroom/issues
 ## 🤝 Contributing
 
 PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Good first contributions: new domain playbooks, before/after examples, and FAQ entries.
-
-## 🎨 Branding assets
-
-This README references two images you should add for a top-tier look:
-- `docs/banner.png` — 1280×640 hero (also set it as the repo's **Social preview** in Settings → General).
-- `docs/demo.gif` — a 10–20s screen capture of the skill in action.
-
-I can't generate binary images, so these are intentionally left as placeholders for you to drop in.
 
 ## 💬 Support
 
