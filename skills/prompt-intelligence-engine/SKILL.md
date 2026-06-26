@@ -2,6 +2,11 @@
 name: prompt-intelligence-engine
 description: Turn rough one-line prompts into structured, expert-level prompts. Use when the user asks to improve/optimize/rewrite/refine a prompt, or pastes a vague request and wants the best version before running it. Auto-detects intent, picks an expert role, fills gaps with surfaced assumptions, scores quality, and offers to run the result.
 license: MIT
+version: 1.0.0
+metadata:
+  author: VivekParmar-18
+  homepage: https://github.com/VivekParmar-18/skillroom
+  keywords: [prompt-engineering, prompt-optimizer, prompt-improver, prompt-intelligence, meta-prompting, prompt-rewriter, productivity, ai, llm]
 ---
 
 # Prompt Intelligence Engine
