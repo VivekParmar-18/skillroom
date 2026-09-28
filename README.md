@@ -1,12 +1,12 @@
 <div align="center">
 
-# 🧠 Prompt Intelligence Engine
+# 🏠 Skillroom
 
-### Turn one-line prompts into expert-level prompts — automatically.
+### Claude Agent Skills that do real work.
 
-*A Claude Agent Skill that thinks like a senior consultant, not a text rewriter.*
+*A small, curated room of skills: each one is focused, tested and documented.*
 
-[![Install with skills.sh](https://img.shields.io/badge/install-npx%20skills%20add-black?style=for-the-badge)](https://skills.sh)
+[![Install with skills.sh](https://img.shields.io/badge/install-npx%20skills%20add-black?style=for-the-badge)](https://skills.sh/vivekparmar-18/skillroom)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![Claude Skill](https://img.shields.io/badge/Claude-Agent%20Skill-d97757?style=for-the-badge)](https://github.com/vercel-labs/skills)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blueviolet.svg?style=for-the-badge)](CONTRIBUTING.md)
@@ -19,7 +19,20 @@ npx skills add VivekParmar-18/skillroom
 
 ---
 
-## 😖 The problem
+## 🗂️ Skills in this room
+
+| Skill | What it does | Install |
+|---|---|---|
+| 🧠 [**prompt-intelligence-engine**](skills/prompt-intelligence-engine) | Turns one-line prompts into expert-level prompts: intent detection, auto expert role, surfaced assumptions, quality score. | `npx skills add VivekParmar-18/skillroom --skill prompt-intelligence-engine` |
+| 🎬 [**repo-reel**](skills/repo-reel) | Turns any codebase into a cinematic 1080p60 motion-graphics product video with sound, built from the real facts in your repo. | `npx skills add VivekParmar-18/skillroom --skill repo-reel` |
+
+Install everything with `npx skills add VivekParmar-18/skillroom`, or list the skills first with `--list`. Add `-g` to install user-wide.
+
+---
+
+## 🧠 Prompt Intelligence Engine
+
+### Turn one-line prompts into expert-level prompts, automatically.
 
 You type a quick prompt:
 
@@ -27,11 +40,7 @@ You type a quick prompt:
 
 …and the model guesses. It picks a stack you didn't want, skips rate-limiting, forgets validation, invents constraints silently, and you spend three follow-ups fixing it.
 
-Good prompts are a skill. Most people don't have time to write a 300-word, role-assigned, constraint-complete prompt for every task — so they don't, and they get mediocre output.
-
-## ✨ The fix
-
-**Prompt Intelligence Engine** sits between your rough idea and the model. It detects what you're trying to do, adopts the right expert role, reuses context from your conversation, fills the gaps with **assumptions it shows you**, scores the result, and hands back a prompt that's actually good — then offers to run it.
+**Prompt Intelligence Engine** sits between your rough idea and the model. It detects what you're trying to do, adopts the right expert role, reuses context from your conversation, fills the gaps with **assumptions it shows you**, scores the result, and hands back a prompt that's actually good. Then it offers to run it.
 
 ```
 🧠 Prompt Intelligence — coding · medium
@@ -52,12 +61,6 @@ plaintext secrets, edge cases handled.
 ▸ Run this now? (yes / edit / show your work)
 ```
 
----
-
-## 🚀 Why it's different
-
-Most prompt improvers just reword your text. This one runs an **adaptive pipeline** gated by task difficulty, so a tiny ask stays fast and a big one gets the full treatment.
-
 | | Typical prompt rewriter | 🧠 Prompt Intelligence Engine |
 |---|---|---|
 | Detects intent & picks an expert role | sometimes | ✅ always, automatic |
@@ -67,45 +70,7 @@ Most prompt improvers just reword your text. This one runs an **adaptive pipelin
 | Scales to task size | one-size-fits-all | ✅ simple → enterprise (phased decomposition) |
 | After optimizing | just text | ✅ offers to run it |
 
-## 🎯 Features
-
-- **Intent classification** — coding, debugging, research, SQL, AWS, QA, docs, marketing, resume, LinkedIn, career, education, brainstorming.
-- **Automatic expert role** — you never write "act as…".
-- **Context inference** — reuses what you already said in the conversation.
-- **Hidden-requirement expansion** — a login API silently implies auth, validation, rate-limiting, logging, tests.
-- **Surfaced assumptions** — every gap is tagged `[ASSUMED: …]`, never hidden.
-- **Quality scorecard** — transparent 0–100 score; auto-improves weak prompts.
-- **Difficulty-tiered depth** — adds decomposition, self-critique, and compression only when the task is big.
-- **Optimize → offer to execute** — copy it, or run it on the spot.
-
-## 📦 Installation
-
-**Via the skills.sh CLI (recommended):**
-```bash
-npx skills add VivekParmar-18/skillroom
-```
-
-**Manually (Claude Code / claude.ai):**
-```bash
-git clone https://github.com/VivekParmar-18/skillroom.git
-cp -r skillroom/skills/prompt-intelligence-engine ~/.claude/skills/
-```
-Restart Claude, then invoke it (below).
-
-## 💡 Usage
-
-Just ask Claude to optimize a prompt:
-
-- *"Optimize this prompt: write a blog about AI"*
-- *"Improve my prompt before running it: fix this SQL query"*
-- *"Make this prompt better: build a login API"*
-
-Then reply:
-- **`yes`** → it runs the optimized prompt
-- **`edit`** → correct an assumption, it re-emits
-- **`show your work`** → full diagnostics (intent reasoning, prompt AST, critique, token counts)
-
-## 🔁 Before vs After
+**Usage:** ask Claude *"Optimize this prompt: write a blog about AI"*, then reply **`yes`** (run it), **`edit`** (fix an assumption) or **`show your work`** (full diagnostics).
 
 | Before | After |
 |---|---|
@@ -113,61 +78,85 @@ Then reply:
 | `make a landing page` | A frontend-engineer prompt with audience, sections, responsive + a11y requirements, framework `[ASSUMED]`, and a clear definition of done. |
 | `build amazon` | An enterprise-tier **phased plan** (Requirements → Architecture → Data → Backend → Frontend → Testing → Deployment), each phase runnable on its own. |
 
-## ⚙️ How it works
+➡️ Full docs: [`skills/prompt-intelligence-engine`](skills/prompt-intelligence-engine)
 
-A tight `SKILL.md` plus reference files loaded **only when the difficulty tier needs them** (progressive disclosure — keeps it fast):
+---
 
+## 🎬 repo-reel
+
+### Turn any codebase into a cinematic product video.
+
+| | | |
+|---|---|---|
+| ![Title](skills/repo-reel/assets/previews/client-60s-01.jpg) | ![Lifecycle journey](skills/repo-reel/assets/previews/client-60s-03.jpg) | ![Money flow](skills/repo-reel/assets/previews/client-60s-04.jpg) |
+| ![Role orbit](skills/repo-reel/assets/previews/client-60s-05.jpg) | ![Live dashboard](skills/repo-reel/assets/previews/client-60s-06.jpg) | ![Tech stats](skills/repo-reel/assets/previews/technical-60s-04.jpg) |
+
+Ask *"make a 60 second promo video about this project"* and Claude:
+
+1. **reads your repo** for the real story: status enums become a lifecycle animation, role enums become the "everyone connected" orbit, and billing states become a money-flow scene;
+2. **storyboards** it for your audience (clients, engineers, or both);
+3. **builds** it from 10 cinematic scenes (spring physics, 3D, motion blur, particles, kinetic type);
+4. **checks every scene** frame by frame and fixes layout issues;
+5. **renders** a real **MP4, 1920×1080 at 60 fps**, with a synthesized soundtrack. There's nothing to license.
+
+Every on-screen claim traces to a file in your repo. Mock numbers carry an *Illustrative data* tag, and secrets or internal URLs never appear on screen.
+
+➡️ Full docs, scene library and examples: [`skills/repo-reel`](skills/repo-reel)
+
+---
+
+## 📦 Installation
+
+**Via the skills.sh CLI (recommended):**
+
+```bash
+npx skills add VivekParmar-18/skillroom                                   # all skills
+npx skills add VivekParmar-18/skillroom --skill repo-reel                 # just one
+npx skills add VivekParmar-18/skillroom --list                            # see what's here
 ```
-skills/prompt-intelligence-engine/
-├── SKILL.md                       entry: triggers, difficulty gate, pipeline, output contract
-├── references/
-│   ├── pipeline.md                full stage instructions
-│   ├── domain-playbooks.md        intent → role + enhancers + hidden requirements
-│   └── scoring.md                 8-point lint scorecard, ≥90 gate, compression
-└── examples/transformations.md    before→after calibration examples
+
+**Manually (Claude Code / claude.ai):**
+
+```bash
+git clone https://github.com/VivekParmar-18/skillroom.git
+cp -r skillroom/skills/<skill-name> ~/.claude/skills/
 ```
 
-Pipeline order: **difficulty → intent → context → role → skill-level → hidden-reqs → (tiered stages) → format → scorecard.**
+Restart Claude, then just ask. Skills trigger on their own when your request matches.
 
 ## ❓ FAQ
 
 <details>
-<summary><b>Does it work outside Claude Code?</b></summary>
-It's a standard Agent Skill, so it works anywhere the skills.sh CLI installs (Claude Code, Cursor, Codex CLI, and more). The optimized prompt itself is portable to any model.
-</details>
-
-<details>
-<summary><b>Will it slow down simple prompts?</b></summary>
-No — difficulty estimation runs first. "Fix this CSS" gets a light pass; only complex/enterprise prompts trigger decomposition and the critique loop.
-</details>
-
-<details>
-<summary><b>Does it secretly change what I asked for?</b></summary>
-No. It preserves your intent and fills only the gaps — and every gap it fills is shown as an <code>[ASSUMED: …]</code> tag you can override with <code>edit</code>.
+<summary><b>Do these work outside Claude Code?</b></summary>
+They're standard Agent Skills, so they work anywhere the skills.sh CLI installs (Claude Code, Cursor, Codex CLI, and more). repo-reel also needs Node.js 18+ to render video.
 </details>
 
 <details>
 <summary><b>Is my data sent anywhere?</b></summary>
-No. The skill is plain instructions Claude reads locally — there's no server, no telemetry, no external calls of its own.
+No. The skills are instructions and scripts that run locally, with no server and no telemetry. repo-reel's only network use is <code>npm install</code> on its first render.
+</details>
+
+<details>
+<summary><b>Will the prompt engine slow down simple prompts?</b></summary>
+No. Difficulty estimation runs first. "Fix this CSS" gets a light pass; only complex or enterprise prompts trigger decomposition and the critique loop.
 </details>
 
 ## 🗺️ Roadmap
 
-- [ ] More domain playbooks (data science, mobile, game dev, legal)
-- [ ] Optional "ask me 1 question" mode for high-stakes prompts
-- [ ] Saved prompt templates / favorites
-- [ ] Community-contributed playbooks
+- [ ] Prompt engine: more domain playbooks (data science, mobile, game dev, legal) and an "ask me 1 question" mode
+- [ ] repo-reel: 9:16 social format, voice-over track, beat-synced cuts to your own music
+- [ ] More skills in the room
 
 Have an idea? [Open an issue](https://github.com/VivekParmar-18/skillroom/issues).
 
 ## 🤝 Contributing
 
-PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Good first contributions: new domain playbooks, before/after examples, and FAQ entries.
+PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for improving a skill or adding a new one.
 
 ## 💬 Support
 
 - 🐛 Bugs / ideas → [GitHub Issues](https://github.com/VivekParmar-18/skillroom/issues)
-- ⭐ Like it? **Star the repo** — stars drive discovery on skills.sh and GitHub search.
+- ⭐ Like it? **Star the repo.** Stars drive discovery on skills.sh and GitHub search.
 
 ## 📄 License
 
@@ -175,6 +164,6 @@ PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Good first contributions
 
 <div align="center">
 
-**If this saves you a few prompt rewrites, give it a ⭐ — it genuinely helps others find it.**
+**If a skill in here saved you time, give it a ⭐. It genuinely helps others find it.**
 
 </div>

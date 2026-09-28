@@ -1,0 +1,6 @@
+node_modules/
+build/
+out/
+*.mp4
+.DS_Store
+Thumbs.db

@@ -4,3 +4,7 @@ Thumbs.db
 node_modules/
 .idea/
 .vscode/
+# repo-reel promo builds
+build/
+out/
+*.mp4
